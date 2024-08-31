@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia Tierra Querida</title>
+</head>
+<body>
+    <h1>Colombia Tierra Querida</h1>
+    <marquee><h2>Productos Disponibles</h2></marquee>
+    <div class="productos">
+        <div class="producto">
+            <h2>Arepas de Queso</h2>
+            <img src="imagenes/arepa de queso.webp" alt="Imagen del Producto 1" width="150">
+            <p>Arepas de queso frescas y deliciosas, hechas con masa de maíz 100% natural y rellenas con queso</p>
+            <p>Precio: $10.000</p>
+            <button>Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h2>Palitos de Queso</h2>
+            <img src="imagenes/palito de queso.jpeg" alt="Imagen del Producto 2" width="150">
+            <p>Palitos de queso crujientes y sabrosos, elaborados con queso fresco y masa suave, ideales para cualquier ocasión.</p>
+            <p>Precio: $10.000</p>
+            <button>Agregar al carritooo</button>
+        </div>
+        
+    </div>
+
+    
+    <h2>Carrito de Compras</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arepas de Queso</td>
+                <td>2</td>
+                <td>$10.000</td>
+            </tr>
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>$20.000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+    <h2>Formulario de Pago</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br><br>
+
+        <label for="tarjeta">Número de Tarjeta de Crédito:</label>
+        <input type="number" id="tarjeta" name="tarjeta"><br><br>
+
+        <p>Método de envío:</p>
+        <input type="radio" id="envio1" name="envio" value="estandar">
+        <label for="envio1">Envío Estándar</label><br>
+        <input type="radio" id="envio2" name="envio" value="express">
+        <label for="envio2">Envío Express</label><br><br>
+
+        <button type="submit">Pagar</button>
+    </form>
+</body>
+</html>
